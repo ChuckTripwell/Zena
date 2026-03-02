@@ -26,14 +26,13 @@ packages=(
 
   xwayland-satellite
 
+  khal
   cava
   wl-clipboard
 
-  khal
-
   nautilus
-
   alacritty
+  kanshi
 )
 dnf5 -y install "${packages[@]}" --exclude=matugen --exclude=noctalia-qs
 dnf5 -y install nautilus-python matugen --releasever=44 --disablerepo='*copr*'
