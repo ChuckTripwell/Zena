@@ -3,7 +3,6 @@ set -ouex pipefail
 shopt -s nullglob
 
 semodule -i /ctx/patches/homed-patch-01.pp
-semodule -i /ctx/patches/homed-patch-02.pp
 
 authselect select sssd with-systemd-homed with-faillock without-nullok
 authselect apply-changes
