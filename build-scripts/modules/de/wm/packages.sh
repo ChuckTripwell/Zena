@@ -8,6 +8,8 @@ packages=(
   xdg-desktop-portal-gtk
   xdg-desktop-portal-gnome
 
+  kf6-kimageformats
+
   gnome-keyring
   gnome-keyring-pam
 
