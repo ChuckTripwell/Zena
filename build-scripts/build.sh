@@ -7,7 +7,7 @@ modules=()
 
 case "$IMAGE" in
   zena)
-    cp -avf "/ctx/system-files/twm/." /
+    cp -avf "/ctx/system-files/wm/." /
     modules=(
       "base.dnf"
       "base.kernel"
@@ -24,7 +24,7 @@ case "$IMAGE" in
     )
     ;;
   zena-nvidia)
-    cp -avf "/ctx/system-files/twm/." /
+    cp -avf "/ctx/system-files/wm/." /
     cp -avf "/ctx/system-files/nvidia/." /
     modules=(
       "base.dnf"

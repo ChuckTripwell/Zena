@@ -28,8 +28,8 @@ packages=(
   gnome-keyring
   gnome-keyring-pam
   mangowc
-  openssh‑askpass
   pinentry-gnome3
+  zenity
 )
 
 dnf5 -y install "${packages[@]}" --setopt=install_weak_deps=False
