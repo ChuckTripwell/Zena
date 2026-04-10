@@ -5,7 +5,7 @@ shopt -s nullglob
 packages=(
   # Network / Connectivity
   NetworkManager
-  NetworkManager-adsl
+  #NetworkManager-adsl
   NetworkManager-bluetooth
   NetworkManager-config-connectivity-fedora
   NetworkManager-libnm
