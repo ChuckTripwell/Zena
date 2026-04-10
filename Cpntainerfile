@@ -5,9 +5,10 @@ COPY patches /patches
 COPY system-files/assets /assets
 COPY system-files/ /system-files
 
-FROM ghcr.io/ublue-os/bazzite-nvidia-open:stable
-
+FROM ghcr.io/ublue-os/bazzite:stable
 COPY system-files/common /
+
+ARG IMAGE=${IMAGE}
 
 RUN mkdir -p /usr/lib/bootupd/updates \
     && cp -r /usr/lib/efi/*/*/* /usr/lib/bootupd/updates
