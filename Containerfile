@@ -20,6 +20,6 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh
 
-RUN mv /etc/yum.repos.d/tmp/* /etc/yum.repos.d/ && rm -rf /etc/yum.repos.d/tmp/
+#RUN mv /etc/yum.repos.d/tmp/* /etc/yum.repos.d/ && rm -rf /etc/yum.repos.d/tmp
 
 RUN bootc container lint
