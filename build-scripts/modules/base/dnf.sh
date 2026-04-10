@@ -18,7 +18,7 @@ dnf5 config-manager addrepo --from-repofile=https://pkg.cloudflareclient.com/clo
 
 coprs=(
   bieszczaders/kernel-cachyos-lto
-  bieszczaders/kernel-cachyos-addons
+  #bieszczaders/kernel-cachyos-addons
 
   ublue-os/packages
 
