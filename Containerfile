@@ -13,7 +13,7 @@ ARG IMAGE=${IMAGE}
 RUN mkdir -p /usr/lib/bootupd/updates \
     && cp -r /usr/lib/efi/*/*/* /usr/lib/bootupd/updates
 
-RUN mkdir -p /etc/yum.repos.d/tmp && mv /etc/yum.repos.d/* /etc/yum.repos.d/tmp
+RUN mkdir -p /etc/yum.repos.d/tmp && mv /etc/yum.repos.d/* /etc/yum.repos.d/tmp/
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \
