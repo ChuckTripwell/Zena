@@ -124,7 +124,7 @@ packages=(
   v4l2loopback
 )
 
-dnf5 -y install "${packages[@]}"
+dnf5 -y install --allowerasing "${packages[@]}"
 
 # Dependencies for the First Boot Setup
 packages=(
@@ -135,7 +135,7 @@ packages=(
   webkitgtk6.0
 )
 
-dnf5 -y install "${packages[@]}" --setopt=install_weak_deps=False
+dnf5 -y install --allowerasing "${packages[@]}" --setopt=install_weak_deps=False
 mv /usr/share/wayland-sessions/niri.desktop /usr/share/wayland-sessions/niri.desktop.disabled
 
 # First Boot Setup GUI
